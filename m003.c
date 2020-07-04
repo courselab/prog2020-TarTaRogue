@@ -22,8 +22,35 @@
 /* Verify if the positive integer 'a' is prime. */
 
 int is_prime (int a)
-{
-  return 0;
+{int n,k,z,i,w;
+    n=a;
+    w=0;
+    z=0;
+    i=1;
+    while(i<(a/2))
+    {  k=a%(a-n+2);
+    n=n-1;
+    i=i+1;
+
+            if ( k!=0)
+            {z=1+z;
+
+            }
+            else
+            {w=w+1;
+
+            }
+
+    }
+    if(z==(a/2 -1))
+    {
+        a=1;
+    }
+    else
+    {
+       a=0;
+    }
+  return a;
 }
 
 #define USAGE "m003 <num>\n"
