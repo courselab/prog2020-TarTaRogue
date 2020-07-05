@@ -35,7 +35,7 @@ int lettercount (char *a[])
     x=strlen(a);
 
      while (i<=(x-1))
-    {printf("numero %d\n",i);
+    {
      d=a[i];
       i=i+1;
      if (d!=' ')
