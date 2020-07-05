@@ -27,7 +27,7 @@
 
 /* Count the number of letters in string s.*/
 
-int lettercount (char *a)
+int lettercount (char a)
 {   int k,i,x;
     char d;
     k=0;
