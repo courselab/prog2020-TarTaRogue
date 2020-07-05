@@ -45,7 +45,7 @@ int lettercount (char *a)
      }
 
     }
-   a=k
+   a=k;
     return a;
 }
 
