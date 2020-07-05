@@ -27,16 +27,16 @@
 
 /* Count the number of letters in string s.*/
 
-int lettercount (char *a)
+int lettercount (char *s)
 {   int k,i,x;
     char d;
     k=0;
     i=0;
-    x=strlen(a);
+    x=strlen(s);
 
      while (i<=(x-1))
     {
-     d=a[i];
+     d=s[i];
       i=i+1;
      if (d!=' ')
      {k=k+1;
@@ -45,8 +45,8 @@ int lettercount (char *a)
      }
 
     }
-   a=k;
-    return a;
+   
+    return k;
 }
 
 
