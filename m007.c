@@ -38,7 +38,7 @@ int lettercount (char *s)
     {
      d=s[i];
       i=i+1;
-     if (d!=' ')
+     if((d >= 'A' && d <='Z') || (d >= 'a' && d <='z'))
      {k=k+1;
 
 
