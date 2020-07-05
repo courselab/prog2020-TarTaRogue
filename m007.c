@@ -26,9 +26,26 @@
 
 /* Count the number of letters in string s.*/
 
-int lettercount (char *s)
-{
-  return 0;
+int lettercount (char a[])
+{   int k,i,x;
+    char d;
+    k=0;
+    i=0;
+    x=strlen(a);
+
+     while (i<=(x-1))
+    {printf("numero %d\n",i);
+     d=a[i];
+      i=i+1;
+     if (d!=' ')
+     {k=k+1;
+
+
+     }
+
+    }
+
+    return k;
 }
 
 
