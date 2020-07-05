@@ -34,7 +34,7 @@ int lettercount (char *s)
     i=0;
     x=strlen(s);
 
-     while (i<(x-1))
+     while (i<=(x-1))
     {
      d=s[i];
       i=i+1;
