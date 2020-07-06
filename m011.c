@@ -26,10 +26,49 @@
 
 /* Return the number of words in ascii text file 'filename'.*/
 
-int wordcount (char *filename)
+int wordcount (char *a[50])
+    {
+
+    FILE *arq;
+    char str[100],d[10];
+    int x,i,k,z,j;
+
+
+      arq=fopen(*a,"r");
+    z=0;
+    k=0;
+    while ( fgets(str,1000,arq)!=NULL)
 {
-  return 0;
+
+    x=strnlen(str);
+
+
+    for(i=0;i<=(x-1);i=i+1)
+    {
+
+
+
+        if(str[i]==' ')
+        {
+            k=k+1;
+
+        }
+
+
+        if (x==1)
+        {
+            z=z-1;
+        }
+    }
+
+ z=z+1;
+
+
 }
+fclose(arq);
+
+return k+z;
+    }
 
 /* Do not edit function main. */
 
