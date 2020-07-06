@@ -30,7 +30,7 @@
 int decimal (char *b)
 {   char a,d[50],e[50];
     int x,i,k;
-    x=strnlen(b);
+    x=strnlen(b,50);
     strncpy(d,b,x);
     d[x+1]='\0';
     k=0;
