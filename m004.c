@@ -44,7 +44,7 @@ int decimal (char *b)
 
     strncpy(e,d+k,x-k);
     e[x-k]='\0';
-    printf("copia 2 %s\n",e);
+    
 
 
     k=0;
