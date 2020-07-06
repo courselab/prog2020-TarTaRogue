@@ -27,7 +27,7 @@
 
 /* Return the number of words in ascii text file 'filename'.*/
 
-int wordcount (char **a[50])
+int wordcount (char *a)
     {
 
     FILE *arq;
