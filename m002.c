@@ -25,8 +25,107 @@
 
 /* Sort three integers x, y, z in ascending order.*/
 
-void sort (int *a, int *b, int *c)
+void sort (int *a,int *b, int *c)
 {
+    int x,i,z,k;
+
+
+    if ( *a<*b &&  *c<*b)
+    {
+        z=*b;
+    }
+    else {
+            if(*b<*a && *c<*a)
+                {
+                    z=*a;
+                }
+            else
+            {
+                z=*c;
+            }
+    }
+
+
+
+if ( z!=*a && z!=*b)
+{
+    if(*a<*b)
+    {
+
+        x=*b;
+        k=*a;
+        *b=x;
+        *a=k;
+         *c=z;
+
+    }
+    else
+    {
+        *c=z;
+        x=*a;
+       k=*b;
+       *b=x;
+       *a=k;
+    }
+
+}
+else {
+
+if (z!=*a && z!=*c)
+{
+    if (*a<*c)
+    {
+
+        x=*c;
+        k=*a;
+        *c=z;
+        *b=x;
+        *a=k;
+
+
+    }
+    else
+    {
+
+
+        x=*a;
+        k=*c;
+        *a=k;
+        *b=x;
+        *c=z;
+
+
+    }
+}
+
+else
+{
+    if(*b<*c)
+    {
+
+        x=*c;
+        k=*b;
+        *a=k;
+        *b=x;
+        *c=z;
+    }
+    else
+    {
+
+
+        x=*b;
+        k=*c;
+        *c=z;
+        *b=x;
+        *a=k;
+    }
+
+}
+
+
+
+
+}
 }
 
 /* Do not edit this function. */
