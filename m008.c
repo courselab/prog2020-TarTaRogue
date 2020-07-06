@@ -28,9 +28,83 @@
 /* Converts the string 's' from first-middle-last name 
    form into LAST-first-middle form. */
 
-void lastname (char *s)
-{
+void lastname (char *p)
+{   int x,i,k,z;
+    char d[50],c,e[50],f[50],g[50];
+    k=0;
+    x=strlen(p);
+
+
+    strncpy(d,p,x);
+    d[x+1]= '\0';
+
+
+
+    for (i=0;i<=(x-1);i=i+1)
+    {
+        c=d[i];
+
+
+        if (c== ' ')
+        {   z=i;
+
+
+
+        }
+    }
+
+
+
+    strncpy(e,d,(z));
+    e[z]='\0';
+
+
+    strncpy(f,d+z+1,x-z);
+    f[x-z-2]='\0';
+
+
+    x=strnlen(f);
+    strncpy(g,f,x);
+
+    g[x]=',';
+     g[x+1]= ' ';
+    g[x+2]= '\0';
+
+    for (i=0;i<=x;i=i+1)
+    {
+        c=g[i];
+
+        if (c>='a' && 122>='c')
+        {   g[i]=g[i]-32;
+            ;
+        }
+    }
+
+
+
+
+    strncpy(g+x+2,e,z);
+     g[x+2+z]='\0';
+
+
+
+
+
+    x=strlen(g);
+    strncpy(p,g,x);
+    p[x]='\0';
+
+
+
+
+
+
+
+
+
+
 }
+
 
 
 
