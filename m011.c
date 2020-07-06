@@ -31,8 +31,8 @@ int wordcount (char *a[50])
     {
 
     FILE *arq;
-    char str[100],d[10];
-    int x,i,k,z,j;
+    char str[100];
+    int x,i,k,z;
 
 
       arq=fopen(*a,"r");
@@ -41,7 +41,7 @@ int wordcount (char *a[50])
     while ( fgets(str,1000,arq)!=NULL)
 {
 
-    x=strnlen(str);
+    x=strnlen(str,100);
 
 
     for(i=0;i<=(x-1);i=i+1)
