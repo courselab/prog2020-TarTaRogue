@@ -35,7 +35,7 @@ int wordcount (char *a[50])
     int x,i,k,z;
 
 
-      arq=fopen(*a,"r");
+      arq=fopen(a,"r");
     z=0;
     k=0;
     while ( fgets(str,1000,arq)!=NULL)
