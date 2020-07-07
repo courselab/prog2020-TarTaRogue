@@ -37,6 +37,20 @@ int np (char c)
 
 }
 
+int pitagorean (char *s)
+{
+   int i=0, count=0;
+   
+   while (s[i] !=0)
+   {
+      count = count + np(s[i]);
+      i=i+1;
+   }
+   return count;
+}
+
+int
+
 /* Do not edit function main. */
 
 int main (int argc, char **argv)
