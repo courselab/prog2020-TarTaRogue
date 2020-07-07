@@ -26,8 +26,13 @@
 /* Compute the corss product of vectors 'a' and 'b', 
    and store the result in vector 'c'. */
 
-void crossprod (int a[3], int b[3], int c[3])
+void crossprod (int x[3], int y[3], int z[3])
 {
+   z[0]=(x[1]*y[2])- (x[2]*y[1]);
+
+    z[1]=-((x[0]*y[2])-(x[2]*y[0]));
+    z[2]=(x[0]*y[1])-(x[1]*y[0]);
+
 }
 
 
