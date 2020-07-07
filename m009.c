@@ -23,7 +23,7 @@
 
 /* Sort the first 'n' integers values in 'vector'. */
 
-void sort (int* vector, int n)
+void sort (int *a, int n)
 {  int y,j,i;
    
     for (i=1;i<n;i=i+1)
