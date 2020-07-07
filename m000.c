@@ -30,14 +30,14 @@ int np (char c)
       {
          n=(c-'a')%9 +1 ;
       }
-   else 
+   else {
       if( (c>='A') && (c<='Z') )
       {
          n=(c-'a'+32)%9 +1;
       }
-      else
-         n=0;
-   
+      else{
+         n=0;}
+   }
    
  return n;
 
@@ -45,18 +45,20 @@ int np (char c)
 
 int pitagorean (char *s)
 {
-   int i=0, count=0;
+   int i, count;
+   i=0;
+   count=0;
    
    while (s[i] != 0)
    {
-      count = count + np (s[i]);
-      i++;
+      count = count +  np(s[i]);
+      i=i+1;
    }
    
    return count;
 }
 
-int
+
 
 /* Do not edit function main. */
 
