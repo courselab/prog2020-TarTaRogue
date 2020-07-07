@@ -23,9 +23,18 @@
 
 /* Write the number 'n' in Roman numerals.*/
 
-int pitagorean (char *s)
+int np (char c)
 {
-  return 0;
+     int n;
+      if((c>='a')&&(c<='z'))
+         n=(c-'a')% 9+1;
+   else 
+      if((c>='A')&&(c<='Z'))
+         n=(c-'a'+32)% 9+1;
+      else
+         n=0;
+   return n;
+
 }
 
 /* Do not edit function main. */
