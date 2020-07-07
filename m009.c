@@ -24,7 +24,19 @@
 /* Sort the first 'n' integers values in 'vector'. */
 
 void sort (int* vector, int n)
-{
+{  int y,j,i;
+   
+    for (i=1;i<n;i=i+1)
+    {   y=a[i];
+        j=i-1;
+        while(y<a[j]&&(j>=0))
+        {
+            a[j+1]=a[j];
+            j=j-1;
+        }
+        a[j+1]=y;
+
+    }
 }
 
 #define USAGE "m009 <num1> <nun2> ... \n"
