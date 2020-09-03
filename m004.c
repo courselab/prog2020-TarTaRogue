@@ -28,10 +28,73 @@
    into 110); an empty string means zero. */
 
 int decimal (char *b)
-{
-  
-  return 0;
+{   char a,d[50],e[50];
+    int x,i,k;
+    x=strnlen(b,50);
+    strncpy(d,b,x);
+    d[x+1]='\0';
+    k=0;
+    for(i=0;i<=x-1;i=i+1)
+    {
+        if(d[i]==' ')
+        {
+            k=i;
+        }
+    }
+
+    strncpy(e,d+k,x-k);
+    e[x-k]='\0';
+
+
+
+    k=0;
+    x=strlen(e);
+
+    for (i=0;i<=x-1;i=i+1)
+    {
+        a=e[i];
+
+         if (a=='1')
+        {
+            k=k+ele(2,x-i-1);
+
+        }
+    }
+
+return k;
+
 }
+
+int ele (int a, int b)
+{   int k,i,x;
+    x=a;
+    if(b==0 || b==1)
+    {
+        if(b==0)
+        {
+            k=1;
+        }
+        else
+        {
+            k=a;
+        }
+    }
+
+    else
+    {
+        for (i=1;i<b;i=i+1)
+        {
+            a=x*a;
+
+        }
+
+        k=a;
+
+    }
+
+return k;
+}
+
 
 #define USAGE "m004 <string>\n"
 

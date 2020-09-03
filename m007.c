@@ -21,14 +21,32 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #define MAX 256
 
 /* Count the number of letters in string s.*/
 
 int lettercount (char *s)
-{
-  return 0;
+{   int k,i,x;
+    char d;
+    k=0;
+    i=0;
+    x=strlen(s);
+
+     while (i<=(x-1))
+    {
+     d=s[i];
+      i=i+1;
+     if((d >= 'A' && d <='Z') || (d >= 'a' && d <='z'))
+     {k=k+1;
+
+
+     }
+
+    }
+   
+    return k;
 }
 
 
